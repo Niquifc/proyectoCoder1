@@ -1,0 +1,29 @@
+{
+  "name": "prueba-npn-init",
+  "version": "1.0.0",
+  "description": "pruebas de npn",
+  "main": "index.html",
+  "scripts": {
+    "build-css": "node-sass --include-path scss styles/scss/styles-scss.scss styles/css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Niquifc/proyectoCoder1.git"
+  },
+  "keywords": [
+    "prueba",
+    "npm",
+    "init"
+  ],
+  "author": "Nicole Favilla Ccagli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Niquifc/proyectoCoder1/issues"
+  },
+  "homepage": "https://github.com/Niquifc/proyectoCoder1#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
