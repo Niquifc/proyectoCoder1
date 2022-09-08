@@ -1,0 +1,58 @@
+
+.navbar{
+    width: 100%;
+    height: 75%;
+    background-color: rgba(206, 149, 216, 0.5);
+    text-align: justify;
+    font-size: large;
+    display:inline-block;
+    grid-area: nav;
+    align-content: stretch;
+    justify-content: start;
+    align-items: center;
+    justify-items: start;
+
+}
+
+.navbar-nav{
+    list-style: none;
+    padding: 10px 345px;
+    bottom: 73px;
+    top: unset;
+    width: 50%;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+}
+
+.nav-item li a{
+    -webkit-animation:slide-top .5s cubic-bezier(.25,.46,.45,.94) both;
+    animation:slide-top .5s cubic-bezier(.25,.46,.45,.94) both;
+    text-decoration: none;
+    color: rgb(199, 164, 117);
+    padding: 10px;
+    margin-top: auto;
+    margin-bottom: 90px;
+
+}
+
+.navbar-nav li{
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+
+.navbar-nav li a:hover{
+    background: mediumslateblue;
+}
+
+
+ @-webkit-keyframes slide-top{0%{-webkit-transform:translateY(0);transform:translateY(0)}100%{-webkit-transform:translateY(-100px);transform:translateY(-100px)}}
+ @keyframes slide-top{0%{-webkit-transform:translateY(0);transform:translateY(0)}100%{-webkit-transform:translateY(-100px);transform:translateY(-100px)}}

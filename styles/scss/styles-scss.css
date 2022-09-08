@@ -1,0 +1,204 @@
+.body {
+  width: 100vw;
+  display: grid;
+  grid: 25% 50% 25%;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "header header header header header header" "nav nav nav nav nav nav" "main main main main main main" "footer footer footer footer footer footer";
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(../img/home.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url(../img/fondo1.jpg);
+  align-items: center;
+}
+
+.pie {
+  display: inline-block;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  align-content: center;
+  margin: auto;
+  grid-area: footer;
+}
+
+#vinos h1,
+#vinos h2 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-align: center;
+  padding: 20px 0;
+  background-color: rgba(233, 195, 135, 0.7);
+  font-family: Roboto, sans-serif;
+  margin: 20px 0;
+}
+
+#vinos .galeria {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#vinos .galeria figure {
+  text-align: center;
+  width: 30%;
+}
+
+#vinos .galeria figure img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 100%;
+}
+
+#vinos .galeria figure figcaption {
+  font-size: 2.5rem;
+  color: #73146e;
+  padding: 10px 0;
+  background-color: white;
+}
+
+#vinos .galeria p.price {
+  color: #676565;
+  padding-bottom: 10px;
+  background-color: white;
+}
+
+.navbar {
+  width: 100%;
+  height: 75%;
+  background-color: rgba(206, 149, 216, 0.5);
+  text-align: justify;
+  font-size: large;
+  display: inline-block;
+  grid-area: nav;
+  align-content: stretch;
+  justify-content: start;
+  align-items: center;
+  justify-items: start;
+}
+
+.navbar-nav {
+  list-style: none;
+  padding: 10px 345px;
+  bottom: 73px;
+  top: unset;
+  width: 50%;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.nav-item li a {
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  text-decoration: none;
+  color: rgb(199, 164, 117);
+  padding: 10px;
+  margin-top: auto;
+  margin-bottom: 90px;
+}
+
+.navbar-nav li {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+
+.navbar-nav li a:hover {
+  background: mediumslateblue;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100px);
+  }
+}
+@keyframes slide-top {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100px);
+  }
+}
+.h1 {
+  color: rgb(247, 247, 243);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+}
+
+html {
+  font-size: 62.5%;
+  text-align: center;
+}
+
+.header {
+  width: auto;
+  flex-wrap: wrap;
+  grid-area: header;
+}
+
+.body {
+  width: 100vw;
+  display: grid;
+  grid: 25% 50% 25%;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "header header header header header header" "nav nav nav nav nav nav" "main main main main main main" "footer footer footer footer footer footer";
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(../img/home.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url(../img/fondo1.jpg);
+  align-items: center;
+}
+
+.main {
+  width: 100%;
+  margin-top: 30px;
+  grid-area: main;
+}
+
+.imagen {
+  width: 80%;
+  margin: 20px;
+  border-radius: 2%;
+}
+
+.map {
+  margin: 20px;
+  border-radius: 2%;
+}
+
+section article p {
+  background-color: bisque;
+  line-height: 5;
+}
+
+@media screen and (max-width: 380px) {
+  .imagen {
+    width: 50%;
+  }
+  .nav {
+    width: auto;
+    height: 64px;
+  }
+  .main {
+    margin: 5px;
+  }
+  .map {
+    width: 30%;
+    height: auto;
+  }
+}/*# sourceMappingURL=styles-scss.css.map */

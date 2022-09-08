@@ -1,0 +1,41 @@
+#vinos h1,
+#vinos h2{
+	text-transform: uppercase;
+	font-size: 3rem;
+	text-align: center;
+	padding: 20px 0;
+	background-color: rgba(233, 195, 135, 0.7);
+	font-family: Roboto, sans-serif;
+	margin: 20px 0;
+}
+
+
+
+#vinos .galeria{
+	margin: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+	#vinos .galeria figure{
+		text-align: center;
+		width:30% ;
+	}
+
+		#vinos .galeria figure img{
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+			width: 100%;
+		}
+
+		#vinos .galeria figure figcaption{
+			font-size: 2.5rem;
+			color: #73146e ;
+			padding: 10px 0;
+			background-color: white;
+		}
+
+		#vinos .galeria p.price{
+			color: #676565;
+			padding-bottom: 10px;
+			background-color: white;
+		}
